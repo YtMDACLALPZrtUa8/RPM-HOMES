@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPM Home Management Careers</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(255,140,0,0.6)),
+                  url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg') 
+                  no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 850px;
+      width: 95%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 35px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 25px;
+      background: #FF8C00;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e67300;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Join RPM Home Management</h1>
+    <p class="subtitle">Residential Property & Real Estate Professionals</p>
+
+    <form action="https://formspree.io/f/xreaneke" method="POST">
+
+      <!-- Personal Details -->
+      <label>Full Name *</label>
+      <input type="text" name="Full Name" required>
+
+      <label>Email Address *</label>
+      <input type="email" name="Email" required>
+
+      <label>Phone Number *</label>
+      <input type="tel" name="Phone" required>
+
+      <label>City & State *</label>
+      <input type="text" name="Location" required>
+
+      <!-- Role Selection -->
+      <label>Position Applying For *</label>
+      <select name="Role" required>
+        <option value="">Select a position</option>
+        <option>Personal Assistant</option>
+        <option>Sales Assistant</option>
+        <option>Leasing Manager</option>
+        <option>Letting Agent</option>
+      </select>
+
+      <!-- Work Experience -->
+      <label>Years of Relevant Experience *</label>
+      <input type="text" name="Years of Experience" required>
+
+      <label>Previous Company Name *</label>
+      <input type="text" name="Previous Company" required>
+
+      <label>Describe Your Main Responsibilities There *</label>
+      <textarea name="Previous Responsibilities" rows="4" required></textarea>
+
+      <label>Key Skills Relevant to This Role *</label>
+      <textarea name="Key Skills" rows="3" required></textarea>
+
+      <label>Experience Using CRM or Property Management Software</label>
+      <textarea name="CRM Experience" rows="3"></textarea>
+
+      <!-- Scenario Question -->
+      <label>
+        How would you handle a difficult client who is unhappy about a property listing or delay? *
+      </label>
+      <textarea name="Client Scenario Response" rows="4" required></textarea>
+
+      <!-- Availability -->
+      <label>Availability *</label>
+      <input type="text" name="Availability" placeholder="Full-time, Part-time, Immediate start, etc." required>
+
+      <label>Why Do You Want to Join RPM Home Management? *</label>
+      <textarea name="Motivation" rows="4" required></textarea>
+
+      <label>LinkedIn Profile or Resume Link</label>
+      <input type="url" name="Resume Link">
+
+      <button type="submit">Submit Application</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
